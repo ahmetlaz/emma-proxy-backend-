@@ -7,5 +7,5 @@ services:
     startCommand: 'node server.js'
     autoDeploy: true
     envVars:
-      - key: OPENAI_API_KEY
+      - key: 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
         sync: false
