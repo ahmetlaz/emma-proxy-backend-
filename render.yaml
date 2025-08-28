@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: emma-proxy-backend
+    env: node
+    branch: main
+    buildCommand: 'npm install'
+    startCommand: 'node server.js'
+    autoDeploy: true
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
